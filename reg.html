@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Registration Form</title>
+  <link rel="icon" href=".\Assets\Atomic Logo Unsquared.png">
+  <link rel="stylesheet" href="reg.css">
+  <link rel="stylesheet" media="screen and (max-width: 850px)" href="Atomic Regform Phone.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav id="Navbar">
+      <a href="#" id="anc">
+        <div><img id="logo" src="Assets/Atomic Logo Unsquared.png"></div>
+      </a>
+      <a href="#cu" id="Navitems">Contact Us</a>
+      <a href="#lgfy" id="Navitems">Life guides for you</a>
+      <a href="#jmu" id="Navitems">Join with us</a>
+      <a href="#as" id="Navitems">Atomic Services</a>
+      <a href="#h" id="Navitems">Home</a>
+    </nav>
+    <!-- Menu -->
+    <div class="menu-wrap">
+      <input type="checkbox" class="toggler">
+      <div class="hbg">
+        <div></div>
+      </div>
+      <div class="menu">
+        <div>
+          <div style="background-color: black;">
+            <a href="#" style="background-color: black;">
+              <div style="background-color: black;"><img id="Menulogo" src="./Assets/Atomic Logo Unsquared.png"></div>
+            </a>
+            <a href="#" id="Menu-Title">Atomic Hybrid Community</a>
+            <a href="#cu" id="Menuitems">Home</a>
+            <a href="#lgfy" id="Menuitems">Atomic Hybrid Community Services</a>
+            <a href="#jmu" id="Menuitems">Join With Us</a>
+            <a href="#as" id="Menuitems">Life Guides for You</a>
+            <a href="#h" id="Menuitems">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mcc">
+    <div class="lgw">
+      <form class="form" onsubmit="sendEmail();reset();return false">
+        <h2 class="hd2" style="font-family: 'Baloo Da 2';">Registration Form...
+        </h2>
+        <div class="mycmcont">
+          <div class="cmw">
+            <div class="cunpc">
+              <input type="text" class="cunpctxt" required placeholder="Your First name">
+            </div>
+            <div class="cunpc">
+              <input type="text" class="cunpctxt" required placeholder="Your Last name">
+            </div>
+          </div>
+          <div class="cmw">
+            <div class="cunpc">
+              <input type="text" class="cunpctxt" required placeholder="Date of Birth" onfocus="(this.type='date')"
+                onblur="(this.type='text')">
+            </div>
+            <div class="cunpc">
+              <input type="number" class="cunpctxt" required placeholder="Age">
+            </div>
+          </div>
+          <div class="cmw">
+            <div class="cunpc">
+              <input type="text" class="cunpctxt" required placeholder="School Name">
+            </div>
+            <div class="cunpc">
+              <input type="number" class="cunpctxt" required placeholder="Class">
+            </div>
+          </div>
+          <div class="cmw">
+            <div class="cunpc">
+              <input type="tel" class="cunpctxt" required placeholder="Father's Mobile Number">
+            </div>
+            <div class="cunpc">
+              <input type="tel" class="cunpctxt" required placeholder="Mother's Mobile Number">
+            </div>
+          </div>
+          <div class="cmw">
+            <div class="cunpc">
+              <input type="tel" class="cunpctxt" required placeholder="Your Mobile Number">
+            </div>
+            <div class="cunpc" style="background-color: white;">
+              <input type="email" class="cunpctxt" required autocomplete="off" placeholder="E-mail">
+            </div>
+          </div>
+
+
+        </div>
+        <div class="msg">
+          <textarea name="" id="msgt" placeholder="Your Message here" required></textarea>
+        </div>
+        <input type="reset" value="Reset" class="submit-btn">
+        <input type="submit" value="Register" class="submit-btn">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
